@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="judul">KALKULATOR SEGITIGA</h1>
+    <div>
+        <ul>
+            <li class="coba1"><a href="#luassegitiga">LUAS SEGITIGA</a></li>
+        </ul>
+        <ul>
+            <li class="coba2"><a href="#kelilingsegitiga">KELILING SEGITIGA</a></li>
+        </ul>
+    </div>
+    <h1 id="luassegitiga" class="luas">LUAS SEGITIGA</h1>
+    <div class="gambar">
+    <img src="https://th.bing.com/th?id=OIP.PCdA9wkodLzfkqjGl4LhBwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="gambar segitiga">
+    </div>
+    <h3 class="container">Rumus luas Segitiga</h3>
+    <h3 class="rumus">1/2 × a × t</h3>
+    <div class="container-h3">
+    <h3>Penjelasan :</h3>
+    <h3>L = luas</h3>
+    <h3>a = Panjang alas</h3>
+    <h3>t = Tinggi</h3>
+    </div>
+<div class="hitungluas">
+<form class="form">
+    <h2>Hitung Luas Segitiga</h2>
+    <table class="tabel">
+        <tr class="row1">
+            <td>Alas</td>
+            <td>:</td>
+            <td><input type="number" id="alas" name="alas"></td>
+        </tr>
+        <tr class="row2">
+            <td>Tinggi</td>
+            <td>:</td>
+            <td><input type="number" name="tinggi" id="tinggi"></td>
+        </tr>
+        <tr class="row3">
+            <td>Luas</td>
+            <td>:</td>
+            <td><input type="number" name="luas" id="luas" disabled="true" size="5"></td>
+        </tr>
+        <tr class="hitung">
+            <td></td>
+            <td></td>
+            <td><input type="button" value="hitung" onclick="hitungLuas()"></td>
+        </tr>
+        <tr class="reset">
+            <td></td>
+            <td></td>
+            <td><input type="button" value="reset" onclick="resetLuas()"></td>
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+<h1 id="kelilingsegitiga" class="keliling">KELILING SEGITIGA</h1>
+<div class="gambar1">
+    <img src="https://www.bing.com/th?id=OIP.BMtdUxK3xEWJ4Uz7TK3PbgHaEK&w=202&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="gambar segitiga">
+</div>
+<h3 class="container">Rumus keliling Segitiga</h3>
+<h3 class="rumus2">S1 + S2 + S3</h3>
+<div class="container-h3">
+    <h3>Penjelasan :</h3>
+    <h3>S1 = Sisi 1</h3>
+    <h3>S2 = Sisi 2</h3>
+    <h3>S3 = Sisi 3</h3>
+</div>
+<div class="hitungkel">
+    <form class="form2">
+        <h2>Hitung Keliling Segitiga</h2>
+        <table class="tabel2">
+            <tr class="row11">
+                <td>S1</td>
+                <td>:</td>
+                <td><input type="number" id="sisi1" name="sisi1"></td>
+            </tr>
+            <tr class="row21">
+                <td>S2</td>
+                <td>:</td>
+                <td><input type="number" name="sisi2" id="sisi2"></td>
+            </tr>
+            <tr class="row31">
+                <td>S3</td>
+                <td>:</td>
+                <td><input type="number" name="sisi3" id="sisi3"></td>
+            </tr>
+            <tr class="row41">
+                <td>Keliling</td>
+                <td>:</td>
+                <td><input type="number" name="keliling" id="keliling" disabled="true" size="5"></td>
+            </tr>
+            <tr class="hitung2">
+                <td></td>
+                <td></td>
+                <td><input type="button" value="hitung" onclick="hitungKeliling()"></td>
+            </tr>
+            <tr class="reset3">
+                <td></td>
+                <td></td>
+                <td><input type="button" value="reset" onclick="resetKeliling()"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script src="script.js"></script>
+
+<footer> @ RevoU Project WEEK 1</footer>
+</body>
+</html>
